@@ -31,7 +31,7 @@ class AppRouter {
       ),
       // GoRoute(path: "/", builder: (context, state) => StepBusinessView1(),),
       // GoRoute(path: "/", builder: (context, state) => StepBusinessView3()),
-      GoRoute(path: "/", builder: (context, state) => StepBusinessView5()),
+      GoRoute(path: "/", builder: (context, state) => StepBusinessView1()),
     ],
   );
 }
