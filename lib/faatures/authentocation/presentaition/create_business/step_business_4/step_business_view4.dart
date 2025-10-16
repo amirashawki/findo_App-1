@@ -173,14 +173,14 @@ class StepBusinessView4 extends StatelessWidget {
                                   ),
                         );
                       },
-                      obscureText: cubit_stepBusiness4.isShowRepeatPassword,
+                      obscureText: cubit_stepBusiness4.isShowRepeatPassWord,
 
                       suffixIcon: IconButton(
                         onPressed: () {
                           cubit_stepBusiness4.showRepeatPassWord();
                         },
                         icon:
-                            cubit_stepBusiness4.isShowRepeatPassword
+                            cubit_stepBusiness4.isShowRepeatPassWord
                                 ? Icon(Icons.visibility_off)
                                 : Icon(Icons.remove_red_eye),
                       ),

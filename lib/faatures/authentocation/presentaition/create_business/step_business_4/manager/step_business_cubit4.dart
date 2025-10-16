@@ -48,9 +48,9 @@ class StepBusinessCubit4 extends Cubit<StepBusinessStates4> {
     emit(StepBusinessChangeButtonStates4());
   }
    // ******************************* show Repeat passWord
-  bool isShowRepeatPassword = false;
+  bool isShowRepeatPassWord = false;
   void showRepeatPassWord() {
-    isShowRepeatPassword = !isShowRepeatPassword;
+    isShowRepeatPassWord = !isShowRepeatPassWord;
     emit(StepBusinessChangeButtonStates4());
   }
 }
