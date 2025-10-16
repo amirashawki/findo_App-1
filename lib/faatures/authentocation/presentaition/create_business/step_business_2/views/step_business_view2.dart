@@ -1,4 +1,3 @@
-// faatures/authentocation/presentaition/create_business/step_business_2/step_business_view2.dart
 import 'package:findo/faatures/authentocation/presentaition/create_business/step_business_1/views/widgets/step_progress.dart';
 import 'package:findo/faatures/authentocation/presentaition/create_business/step_business_2/action/step_business_action2.dart';
 import 'package:findo/faatures/authentocation/presentaition/create_business/step_business_2/manager/step_business_cubit2.dart';
@@ -29,36 +28,38 @@ class StepBusinessView2 extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // ******************************* Sizebox
-                    SizedBox(height: 100.0),
-                    // ******************************* Text
-                    Center(
-                      child: Text(
-                        'Findo',
-                        style: TextStyle(
-                          fontFamily: 'SF-Pro-Rounded-Bold',
-                          color: AppColors.kPrimaryColor,
-                          fontSize: 32,
+                    const SizedBox(height: 100.0),
+                    // ******************************* Title
+                    const Center(
+                        child: Column(
+                          children: [
+                            Text(
+                              'Findo',
+                              style: TextStyle(
+                                fontFamily: 'SF-Pro-Rounded-Bold',
+                                color: AppColors.kPrimaryColor,
+                                fontSize: 32,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              'For Business',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: AppColors.ksubTitle,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    ),
-                    // ******************************* SubTitle
-                    Center(
-                      child:Text(
-                        'For Business',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: AppColors.ksubTitle,
-                        ),
-                      ),
-                    ),
-                    // ******************************* Sizebox
-                    SizedBox(height: 40),
+                      // ******************************* Sizebox
+                    const SizedBox(height: 35),
                     // ******************************* Step Progress
                     StepProgress(currentStep: 2, totalSteps: 5),
                     // ******************************* Sizebox
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     // ******************************* Information
-                    Text(
+                    const Text(
                       'Information',
                       style: TextStyle(
                         fontFamily: 'SF-Pro-Rounded-Bold',
@@ -68,10 +69,9 @@ class StepBusinessView2 extends StatelessWidget {
                       ),
                     ),
                     // ******************************* Sizebox
-                    SizedBox(height: 20),
-
+                    const SizedBox(height: 20),
                     // ******************************* full name
-                    Text(
+                    const Text(
                       'Full Name (Manager)',
                       style: TextStyle(
                         fontSize: 15,
@@ -80,7 +80,7 @@ class StepBusinessView2 extends StatelessWidget {
                       ),
                     ),
                     // ******************************* Sizebox
-                    SizedBox(height: 15),
+                    const SizedBox(height: 15),
                     // ******************************* Field 1
                     customTextFormField(
                       controller: cubit_stepBusiness2.full_name,
@@ -92,10 +92,9 @@ class StepBusinessView2 extends StatelessWidget {
                       text: 'Enter your Fullname',
                     ),
                     // ******************************* Sizebox
-                    SizedBox(height: 20),
-
+                    const SizedBox(height: 20),
                     // ******************************* National id
-                    Text(
+                    const Text(
                       'National id',
                       style: TextStyle(
                         fontSize: 15,
@@ -104,7 +103,7 @@ class StepBusinessView2 extends StatelessWidget {
                       ),
                     ),
                     // ******************************* Sizebox
-                    SizedBox(height: 15),
+                    const SizedBox(height: 15),
                     // ******************************* Field 2
                     customTextFormField(
                       controller: cubit_stepBusiness2.National_id,
@@ -116,10 +115,9 @@ class StepBusinessView2 extends StatelessWidget {
                       text: 'Enter your National id',
                     ),
                     // ******************************* Sizebox
-                    SizedBox(height: 20),
-
+                    const SizedBox(height: 20),
                     // ******************************* Phone
-                    Text(
+                    const Text(
                       'Phone',
                       style: TextStyle(
                         fontSize: 15,
@@ -128,7 +126,7 @@ class StepBusinessView2 extends StatelessWidget {
                       ),
                     ),
                     // ******************************* Sizebox
-                    SizedBox(height: 15),
+                    const SizedBox(height: 15),
                     // ******************************* Field 3 
                     customTextFormField(
                       controller: cubit_stepBusiness2. phone,
@@ -141,8 +139,7 @@ class StepBusinessView2 extends StatelessWidget {
                       text: 'Enter your phone',
                     ),
                     // ******************************* Sizebox
-                    SizedBox(height: 50),
-
+                    const SizedBox(height: 50),
                     // ******************************* Button
                     ClipRRect(
                       borderRadius: BorderRadius.circular(25),
@@ -163,7 +160,6 @@ class StepBusinessView2 extends StatelessWidget {
                         ),
                       ),
                     ),
-
                   ],
                 ),
               ),
