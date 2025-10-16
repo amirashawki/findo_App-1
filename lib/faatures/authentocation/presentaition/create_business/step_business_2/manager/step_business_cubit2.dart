@@ -15,24 +15,48 @@ class StepBusinessCubit2 extends Cubit<StepBusinessStates2> {
   final phone = TextEditingController();
   final forkey = GlobalKey<FormState>();
 
-  
-   // ******************************* Change button
+  // ******************************* Change button
   bool startShimmer = false;
   Color buttonEnable = AppColors.kbutton_disabel;
   VoidCallback? functionButton;
-   void changeButton(String? value, context, {VoidCallback? custom_functionButton}) {
-    bool values = full_name.text.isNotEmpty && National_id.text.isNotEmpty && phone.text.isNotEmpty;
-    if(values) {
-       startShimmer = true;
-       buttonEnable = AppColors.kPrimaryColor;
-       functionButton = custom_functionButton;
+  void changeButton(
+    String? value,
+    context, {
+    VoidCallback? custom_functionButton,
+  }) {
+    bool values =
+        full_name.text.isNotEmpty &&
+        National_id.text.isNotEmpty &&
+        phone.text.isNotEmpty;
+    if (values) {
+      startShimmer = true;
+      buttonEnable = AppColors.kPrimaryColor;
+      functionButton = custom_functionButton;
     } else {
-       startShimmer = false;
-       buttonEnable = AppColors.kbutton_disabel;
-       functionButton = null;
+      startShimmer = false;
+      buttonEnable = AppColors.kbutton_disabel;
+      functionButton = null;
     }
 
     emit(StepBusinessChangeButtonStates2());
-   } 
-  
+  }
+
+  // ******************************* phone  validation
+  String? validatePhoneNumber(String? value) {
+    final text = value?.trim() ?? '';
+
+    if (text.isEmpty) {
+      return 'Please enter your phone number';
+    }
+
+    if (!(text.startsWith('01') || text.startsWith('1'))) {
+      return 'Phone number must start with 01 or 1';
+    }
+
+    if (text.length != 11) {
+      return 'Phone number must be 11 digits';
+    }
+
+    return null;
+  }
 }

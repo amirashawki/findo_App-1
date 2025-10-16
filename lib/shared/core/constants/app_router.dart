@@ -30,7 +30,7 @@ class AppRouter {
         builder: (context, state) => SelectAccountView(),
       ),
 
-      GoRoute(path: "/", builder: (context, state) => StepBusinessView4()),
+      GoRoute(path: "/", builder: (context, state) => StepBusinessView2()),
 
       // GoRoute(path: "/", builder: (context, state) => StepBusinessView3()),
       // GoRoute(path: "/", builder: (context, state) => StepBusinessView4()),
