@@ -1,5 +1,4 @@
 // faatures/authentocation/presentaition/create_business/step_business_2/manager/step_business_cubit2.dart
-import 'package:findo/faatures/authentocation/presentaition/create_business/step_business_1/manager/step_business_states1.dart';
 import 'package:findo/faatures/authentocation/presentaition/create_business/step_business_2/manager/step_business_states2.dart';
 import 'package:findo/shared/core/constants/constants.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

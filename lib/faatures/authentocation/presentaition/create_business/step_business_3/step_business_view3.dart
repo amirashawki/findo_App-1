@@ -1,4 +1,3 @@
-// faatures/authentocation/presentaition/create_business/step_business_2/step_business_view2.dart
 import 'package:findo/faatures/authentocation/presentaition/create_business/step_business_1/views/widgets/step_progress.dart';
 import 'package:findo/faatures/authentocation/presentaition/create_business/step_business_2/action/step_business_action2.dart';
 import 'package:findo/faatures/authentocation/presentaition/create_business/step_business_2/manager/step_business_cubit2.dart';
